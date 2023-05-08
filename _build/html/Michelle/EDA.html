@@ -1,0 +1,1171 @@
+
+
+<!DOCTYPE html>
+
+
+<html >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Explore the Number of Animals in the Shelter by Type &#8212; Group 12 Final Project</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Michelle/EDA';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="None"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../README.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">Group 12 Final Project</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../README.html">
+                    Group 12 Final Project
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../main.html">Analysis of Animal Shelter Data in Sonoma County, CA</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/UCB-stat-159-s23/project-Group12/HEAD?urlpath=lab/tree/Michelle/EDA.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onBinder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/UCB-stat-159-s23/project-Group12" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/UCB-stat-159-s23/project-Group12/issues/new?title=Issue%20on%20page%20%2FMichelle/EDA.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/Michelle/EDA.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Explore the Number of Animals in the Shelter by Type</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Explore the Number of Animals in the Shelter by Type</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#eda-what-are-the-top-cat-breeds-in-the-shelter">EDA: What are the Top Cat Breeds in the Shelter?</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#eda-what-are-the-top-dog-breeds-in-the-shelter">EDA: What are the Top Dog Breeds in the Shelter?</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#trend-line-which-year-has-the-most-number-of-animal-intakes">Trend line: which year has the most number of animal intakes?</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#predict-whether-an-animal-is-adopted-eventually">Predict whether an Animal is adopted eventually</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">shelter_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../Animal_Shelter_Data.csv&#39;</span><span class="p">)</span>
+<span class="n">shelter_data</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(25008, 24)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">shelter_data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Breed</th>
+      <th>Color</th>
+      <th>Sex</th>
+      <th>Size</th>
+      <th>Date Of Birth</th>
+      <th>Impound Number</th>
+      <th>Kennel Number</th>
+      <th>Animal ID</th>
+      <th>...</th>
+      <th>Intake Subtype</th>
+      <th>Outcome Type</th>
+      <th>Outcome Subtype</th>
+      <th>Intake Condition</th>
+      <th>Outcome Condition</th>
+      <th>Intake Jurisdiction</th>
+      <th>Outcome Jurisdiction</th>
+      <th>Outcome Zip Code</th>
+      <th>Location</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>RAZOR</td>
+      <td>DOG</td>
+      <td>BOSTON TERRIER</td>
+      <td>BLACK/WHITE</td>
+      <td>Neutered</td>
+      <td>SMALL</td>
+      <td>10/29/2009</td>
+      <td>K22-043412</td>
+      <td>TRUCK</td>
+      <td>A396382</td>
+      <td>...</td>
+      <td>FIELD</td>
+      <td>RETURN TO OWNER</td>
+      <td>FLD_IDTAG</td>
+      <td>UNKNOWN</td>
+      <td>HEALTHY</td>
+      <td>SANTA ROSA</td>
+      <td>SANTA ROSA</td>
+      <td>95404.0</td>
+      <td>95404(38.43807, -122.71247)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>NaN</td>
+      <td>OTHER</td>
+      <td>PIGEON</td>
+      <td>GRAY/WHITE</td>
+      <td>Unknown</td>
+      <td>SMALL</td>
+      <td>NaN</td>
+      <td>K23-044095</td>
+      <td>TRUCK</td>
+      <td>A416206</td>
+      <td>...</td>
+      <td>FIELD</td>
+      <td>EUTHANIZE</td>
+      <td>INJ SEVERE</td>
+      <td>UNKNOWN</td>
+      <td>HEALTHY</td>
+      <td>SANTA ROSA</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>MAX</td>
+      <td>DOG</td>
+      <td>BORDER COLLIE</td>
+      <td>BLACK/TRICOLOR</td>
+      <td>Neutered</td>
+      <td>MED</td>
+      <td>03/10/2020</td>
+      <td>K23-044090</td>
+      <td>DS80</td>
+      <td>A399488</td>
+      <td>...</td>
+      <td>FIELD</td>
+      <td>RETURN TO OWNER</td>
+      <td>OVER THE COUNTER_CALL</td>
+      <td>UNKNOWN</td>
+      <td>PENDING</td>
+      <td>COUNTY</td>
+      <td>COUNTY</td>
+      <td>95472.0</td>
+      <td>95472(38.40179, -122.82512)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>NaN</td>
+      <td>CAT</td>
+      <td>DOMESTIC LH</td>
+      <td>GRAY/WHITE</td>
+      <td>Spayed</td>
+      <td>SMALL</td>
+      <td>06/26/2011</td>
+      <td>K22-043405</td>
+      <td>VET</td>
+      <td>A414520</td>
+      <td>...</td>
+      <td>FIELD</td>
+      <td>DISPOSAL</td>
+      <td>DOA</td>
+      <td>UNKNOWN</td>
+      <td>DEAD</td>
+      <td>COUNTY</td>
+      <td>SANTA ROSA</td>
+      <td>95403.0</td>
+      <td>95403(38.51311, -122.75502)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>PUDGY</td>
+      <td>DOG</td>
+      <td>CHIHUAHUA SH/SCHIPPERKE</td>
+      <td>TAN</td>
+      <td>Neutered</td>
+      <td>MED</td>
+      <td>07/20/2013</td>
+      <td>K23-043813</td>
+      <td>DA27</td>
+      <td>A415428</td>
+      <td>...</td>
+      <td>OVER THE COUNTER</td>
+      <td>TRANSFER</td>
+      <td>MUTTVILLE</td>
+      <td>UNKNOWN</td>
+      <td>HEALTHY</td>
+      <td>SANTA ROSA</td>
+      <td>OUT OF COUNTY</td>
+      <td>94103.0</td>
+      <td>94103(37.77672, -122.40779)</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 24 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">shelter_data</span><span class="o">.</span><span class="n">columns</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Index([&#39;Name&#39;, &#39;Type&#39;, &#39;Breed&#39;, &#39;Color&#39;, &#39;Sex&#39;, &#39;Size&#39;, &#39;Date Of Birth&#39;,
+       &#39;Impound Number&#39;, &#39;Kennel Number&#39;, &#39;Animal ID&#39;, &#39;Intake Date&#39;,
+       &#39;Outcome Date&#39;, &#39;Days in Shelter&#39;, &#39;Intake Type&#39;, &#39;Intake Subtype&#39;,
+       &#39;Outcome Type&#39;, &#39;Outcome Subtype&#39;, &#39;Intake Condition&#39;,
+       &#39;Outcome Condition&#39;, &#39;Intake Jurisdiction&#39;, &#39;Outcome Jurisdiction&#39;,
+       &#39;Outcome Zip Code&#39;, &#39;Location&#39;, &#39;Count&#39;, &#39;Intake Year&#39;, &#39;Adopted&#39;],
+      dtype=&#39;object&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">shelter_data</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Size&#39;</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">shelter_data</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Name                    6567
+Type                       0
+Breed                      0
+Color                      0
+Sex                        0
+Size                       0
+Date Of Birth           6206
+Impound Number             0
+Kennel Number             12
+Animal ID                  0
+Intake Date                0
+Outcome Date             159
+Days in Shelter            0
+Intake Type                0
+Intake Subtype             0
+Outcome Type             165
+Outcome Subtype          482
+Intake Condition           0
+Outcome Condition        508
+Intake Jurisdiction        0
+Outcome Jurisdiction    3508
+Outcome Zip Code        3565
+Location                3565
+Count                      0
+dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">shelter_data</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Intake Subtype&#39;</span><span class="p">:</span> <span class="s1">&#39;Intake_Subtype&#39;</span><span class="p">,</span>
+                            <span class="s1">&#39;Intake Type&#39;</span><span class="p">:</span> <span class="s1">&#39;Intake_Type&#39;</span><span class="p">,</span>
+                            <span class="s1">&#39;Intake Condition&#39;</span><span class="p">:</span> <span class="s1">&#39;Intake_Condition&#39;</span><span class="p">},</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="explore-the-number-of-animals-in-the-shelter-by-type">
+<h1>Explore the Number of Animals in the Shelter by Type<a class="headerlink" href="#explore-the-number-of-animals-in-the-shelter-by-type" title="Permalink to this headline">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">shelter_data</span><span class="o">.</span><span class="n">columns</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Index([&#39;Name&#39;, &#39;Type&#39;, &#39;Breed&#39;, &#39;Color&#39;, &#39;Sex&#39;, &#39;Size&#39;, &#39;Date Of Birth&#39;,
+       &#39;Impound Number&#39;, &#39;Kennel Number&#39;, &#39;Animal ID&#39;, &#39;Intake Date&#39;,
+       &#39;Outcome Date&#39;, &#39;Days in Shelter&#39;, &#39;Intake_Type&#39;, &#39;Intake_Subtype&#39;,
+       &#39;Outcome Type&#39;, &#39;Outcome Subtype&#39;, &#39;Intake_Condition&#39;,
+       &#39;Outcome Condition&#39;, &#39;Intake Jurisdiction&#39;, &#39;Outcome Jurisdiction&#39;,
+       &#39;Outcome Zip Code&#39;, &#39;Location&#39;, &#39;Count&#39;, &#39;Intake Year&#39;, &#39;Adopted&#39;],
+      dtype=&#39;object&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">shelter_data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Intake_Type&#39;</span><span class="p">)[</span><span class="s1">&#39;Type&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Intake_Type      Type 
+ADOPTION RETURN  DOG        289
+                 CAT        116
+                 OTHER        4
+BORN HERE        CAT         16
+                 OTHER        1
+CONFISCATE       DOG       1460
+                 CAT        245
+                 OTHER      197
+OS APPT          DOG          1
+OWNER SURRENDER  CAT       1583
+                 DOG       1399
+                 OTHER      143
+QUARANTINE       DOG        422
+                 OTHER      277
+                 CAT        117
+STRAY            DOG      10196
+                 CAT       6598
+                 OTHER     1409
+TRANSFER         DOG        244
+                 CAT        159
+                 OTHER       12
+Name: Type, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="eda-what-are-the-top-cat-breeds-in-the-shelter">
+<h1>EDA: What are the Top Cat Breeds in the Shelter?<a class="headerlink" href="#eda-what-are-the-top-cat-breeds-in-the-shelter" title="Permalink to this headline">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cat_data</span> <span class="o">=</span> <span class="n">shelter_data</span><span class="p">[</span><span class="n">shelter_data</span><span class="p">[</span><span class="s1">&#39;Type&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;CAT&#39;</span><span class="p">]</span>
+<span class="n">cat_breed_counts</span> <span class="o">=</span> <span class="n">cat_data</span><span class="p">[</span><span class="s1">&#39;Breed&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">barh</span><span class="p">(</span><span class="n">cat_breed_counts</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">cat_breed_counts</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Top Cat Breeds in the Shelter&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Count&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Breed&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/d937bbaf8056519bfb1fb1ce2c282577e4543f972be9a155a7ae56308c8d8785.png" src="../_images/d937bbaf8056519bfb1fb1ce2c282577e4543f972be9a155a7ae56308c8d8785.png" />
+</div>
+</div>
+</section>
+<section id="eda-what-are-the-top-dog-breeds-in-the-shelter">
+<h1>EDA: What are the Top Dog Breeds in the Shelter?<a class="headerlink" href="#eda-what-are-the-top-dog-breeds-in-the-shelter" title="Permalink to this headline">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dog_data</span> <span class="o">=</span> <span class="n">shelter_data</span><span class="p">[</span><span class="n">shelter_data</span><span class="p">[</span><span class="s1">&#39;Type&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;DOG&#39;</span><span class="p">]</span>
+<span class="n">dog_breed_counts</span> <span class="o">=</span> <span class="n">dog_data</span><span class="p">[</span><span class="s1">&#39;Breed&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">barh</span><span class="p">(</span><span class="n">dog_breed_counts</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">dog_breed_counts</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Top Dog Breeds in the Shelter&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Count&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Breed&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/26ab16eef023f037d91c9ae710ed001b9d3b07b2dc05e8a24138e2c7a5131612.png" src="../_images/26ab16eef023f037d91c9ae710ed001b9d3b07b2dc05e8a24138e2c7a5131612.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">shelter_data</span><span class="o">.</span><span class="n">columns</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Index([&#39;Name&#39;, &#39;Type&#39;, &#39;Breed&#39;, &#39;Color&#39;, &#39;Sex&#39;, &#39;Size&#39;, &#39;Date Of Birth&#39;,
+       &#39;Impound Number&#39;, &#39;Kennel Number&#39;, &#39;Animal ID&#39;, &#39;Intake Date&#39;,
+       &#39;Outcome Date&#39;, &#39;Days in Shelter&#39;, &#39;Intake_Type&#39;, &#39;Intake_Subtype&#39;,
+       &#39;Outcome Type&#39;, &#39;Outcome Subtype&#39;, &#39;Intake_Condition&#39;,
+       &#39;Outcome Condition&#39;, &#39;Intake Jurisdiction&#39;, &#39;Outcome Jurisdiction&#39;,
+       &#39;Outcome Zip Code&#39;, &#39;Location&#39;, &#39;Count&#39;, &#39;Intake Year&#39;, &#39;Adopted&#39;],
+      dtype=&#39;object&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="trend-line-which-year-has-the-most-number-of-animal-intakes">
+<h1>Trend line: which year has the most number of animal intakes?<a class="headerlink" href="#trend-line-which-year-has-the-most-number-of-animal-intakes" title="Permalink to this headline">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">shelter_data</span><span class="p">[</span><span class="s1">&#39;Intake Year&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">shelter_data</span><span class="p">[</span><span class="s1">&#39;Intake Date&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="o">-</span><span class="mi">4</span><span class="p">:])</span>
+
+<span class="c1"># Filter the data to only include records from the year 2014 and later.</span>
+<span class="n">shelter_data</span> <span class="o">=</span> <span class="n">shelter_data</span><span class="p">[</span><span class="n">shelter_data</span><span class="p">[</span><span class="s1">&#39;Intake Year&#39;</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;2013&#39;</span><span class="p">]</span>
+<span class="n">intake_counts</span> <span class="o">=</span> <span class="n">shelter_data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Intake Year&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">size</span><span class="p">()</span>
+<span class="n">intake_counts</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;line&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Animal Intakes by Year&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">intake_counts</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">intake_counts</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">intake_counts</span><span class="p">)),</span> <span class="n">intake_counts</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Intake Year&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Count&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Trend Line of Animal Intakes by Year&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/27870998ef1e1b7f33811ef8e80e006d4976fe868887d4738d30658d016ca128.png" src="../_images/27870998ef1e1b7f33811ef8e80e006d4976fe868887d4738d30658d016ca128.png" />
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="predict-whether-an-animal-is-adopted-eventually">
+<h1>Predict whether an Animal is adopted eventually<a class="headerlink" href="#predict-whether-an-animal-is-adopted-eventually" title="Permalink to this headline">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create a new column named Adopted, and assign a value of 0 or 1 </span>
+<span class="c1"># to indicate whether each animal has been adopted or not.</span>
+<span class="n">shelter_data</span><span class="p">[</span><span class="s1">&#39;Adopted&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">shelter_data</span><span class="p">[</span><span class="s1">&#39;Outcome Type&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;ADOPTION&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="c1">#Split the data into test and train</span>
+<span class="n">shelter_train</span><span class="p">,</span> <span class="n">shelter_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">shelter_data</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">159</span><span class="p">)</span>
+<span class="n">shelter_train</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">shelter_test</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>((17481, 25), (7492, 25))
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">shelter_train</span><span class="o">.</span><span class="n">columns</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Index([&#39;Name&#39;, &#39;Type&#39;, &#39;Breed&#39;, &#39;Color&#39;, &#39;Sex&#39;, &#39;Size&#39;, &#39;Date Of Birth&#39;,
+       &#39;Impound Number&#39;, &#39;Kennel Number&#39;, &#39;Animal ID&#39;, &#39;Intake Date&#39;,
+       &#39;Outcome Date&#39;, &#39;Days in Shelter&#39;, &#39;Intake_Type&#39;, &#39;Intake_Subtype&#39;,
+       &#39;Outcome Type&#39;, &#39;Outcome Subtype&#39;, &#39;Intake_Condition&#39;,
+       &#39;Outcome Condition&#39;, &#39;Intake Jurisdiction&#39;, &#39;Outcome Jurisdiction&#39;,
+       &#39;Outcome Zip Code&#39;, &#39;Location&#39;, &#39;Count&#39;, &#39;Adopted&#39;],
+      dtype=&#39;object&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">shelter_train</span><span class="p">[[</span><span class="s1">&#39;Type&#39;</span><span class="p">,</span> <span class="s1">&#39;Sex&#39;</span><span class="p">,</span> <span class="s1">&#39;Size&#39;</span><span class="p">,</span> <span class="s1">&#39;Intake_Type&#39;</span><span class="p">,</span> <span class="s1">&#39;Intake_Condition&#39;</span><span class="p">]]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Type</th>
+      <th>Sex</th>
+      <th>Size</th>
+      <th>Intake_Type</th>
+      <th>Intake_Condition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>19589</th>
+      <td>DOG</td>
+      <td>Neutered</td>
+      <td>LARGE</td>
+      <td>STRAY</td>
+      <td>UNKNOWN</td>
+    </tr>
+    <tr>
+      <th>15621</th>
+      <td>CAT</td>
+      <td>Unknown</td>
+      <td>KITTN</td>
+      <td>STRAY</td>
+      <td>UNTREATABLE</td>
+    </tr>
+    <tr>
+      <th>17950</th>
+      <td>CAT</td>
+      <td>Spayed</td>
+      <td>SMALL</td>
+      <td>QUARANTINE</td>
+      <td>UNTREATABLE</td>
+    </tr>
+    <tr>
+      <th>19344</th>
+      <td>DOG</td>
+      <td>Neutered</td>
+      <td>MED</td>
+      <td>STRAY</td>
+      <td>UNKNOWN</td>
+    </tr>
+    <tr>
+      <th>22262</th>
+      <td>OTHER</td>
+      <td>Unknown</td>
+      <td>SMALL</td>
+      <td>QUARANTINE</td>
+      <td>UNTREATABLE</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>9882</th>
+      <td>DOG</td>
+      <td>Male</td>
+      <td>MED</td>
+      <td>STRAY</td>
+      <td>UNKNOWN</td>
+    </tr>
+    <tr>
+      <th>13222</th>
+      <td>DOG</td>
+      <td>Neutered</td>
+      <td>LARGE</td>
+      <td>STRAY</td>
+      <td>HEALTHY</td>
+    </tr>
+    <tr>
+      <th>16642</th>
+      <td>DOG</td>
+      <td>Neutered</td>
+      <td>LARGE</td>
+      <td>STRAY</td>
+      <td>TREATABLE/MANAGEABLE</td>
+    </tr>
+    <tr>
+      <th>22397</th>
+      <td>CAT</td>
+      <td>Male</td>
+      <td>SMALL</td>
+      <td>OWNER SURRENDER</td>
+      <td>UNKNOWN</td>
+    </tr>
+    <tr>
+      <th>22056</th>
+      <td>DOG</td>
+      <td>Male</td>
+      <td>LARGE</td>
+      <td>STRAY</td>
+      <td>UNKNOWN</td>
+    </tr>
+  </tbody>
+</table>
+<p>17481 rows × 5 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">statsmodels.formula.api</span> <span class="k">as</span> <span class="nn">smf</span>
+<span class="n">logreg</span> <span class="o">=</span> <span class="n">smf</span><span class="o">.</span><span class="n">logit</span><span class="p">(</span><span class="n">formula</span> <span class="o">=</span> <span class="s1">&#39;Adopted ~ Type + Sex + Size + Intake_Type + Intake_Condition&#39;</span><span class="p">,</span>
+                       <span class="n">data</span> <span class="o">=</span> <span class="n">shelter_train</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">logreg</span><span class="o">.</span><span class="n">summary</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Warning: Maximum number of iterations has been exceeded.
+         Current function value: 0.357273
+         Iterations: 35
+                           Logit Regression Results                           
+==============================================================================
+Dep. Variable:                Adopted   No. Observations:                17481
+Model:                          Logit   Df Residuals:                    17457
+Method:                           MLE   Df Model:                           23
+Date:                Mon, 01 May 2023   Pseudo R-squ.:                  0.4094
+Time:                        23:26:46   Log-Likelihood:                -6245.5
+converged:                      False   LL-Null:                       -10575.
+Covariance Type:            nonrobust   LLR p-value:                     0.000
+============================================================================================================
+                                               coef    std err          z      P&gt;|z|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------
+Intercept                                   -0.2155      0.201     -1.072      0.284      -0.610       0.179
+Type[T.DOG]                                 -0.2597      0.069     -3.740      0.000      -0.396      -0.124
+Type[T.OTHER]                                2.1649      0.132     16.347      0.000       1.905       2.424
+Sex[T.Male]                                 -0.3421      0.166     -2.064      0.039      -0.667      -0.017
+Sex[T.Neutered]                              3.4818      0.131     26.629      0.000       3.225       3.738
+Sex[T.Spayed]                                3.6436      0.132     27.655      0.000       3.385       3.902
+Sex[T.Unknown]                              -0.8231      0.192     -4.298      0.000      -1.198      -0.448
+Size[T.LARGE]                               -2.3318      0.111    -21.093      0.000      -2.549      -2.115
+Size[T.MED]                                 -1.9292      0.107    -17.972      0.000      -2.140      -1.719
+Size[T.PUPPY]                                0.0186      0.154      0.121      0.904      -0.284       0.321
+Size[T.SMALL]                               -1.5469      0.081    -19.133      0.000      -1.705      -1.388
+Size[T.TOY]                                 -1.3876      0.129    -10.746      0.000      -1.641      -1.134
+Size[T.X-LRG]                               -2.8595      0.287     -9.963      0.000      -3.422      -2.297
+Intake_Type[T.BORN HERE]                   -18.5356   8192.129     -0.002      0.998   -1.61e+04     1.6e+04
+Intake_Type[T.CONFISCATE]                   -2.4406      0.175    -13.907      0.000      -2.785      -2.097
+Intake_Type[T.OS APPT]                     -15.0138   3346.556     -0.004      0.996   -6574.143    6544.115
+Intake_Type[T.OWNER SURRENDER]              -0.8415      0.157     -5.360      0.000      -1.149      -0.534
+Intake_Type[T.QUARANTINE]                   -3.2438      0.300    -10.818      0.000      -3.832      -2.656
+Intake_Type[T.STRAY]                        -1.6970      0.148    -11.465      0.000      -1.987      -1.407
+Intake_Type[T.TRANSFER]                     -1.0886      0.205     -5.298      0.000      -1.491      -0.686
+Intake_Condition[T.TREATABLE/MANAGEABLE]    -0.5956      0.091     -6.543      0.000      -0.774      -0.417
+Intake_Condition[T.TREATABLE/REHAB]          0.3818      0.077      4.954      0.000       0.231       0.533
+Intake_Condition[T.UNKNOWN]                 -1.3646      0.063    -21.801      0.000      -1.487      -1.242
+Intake_Condition[T.UNTREATABLE]             -4.3279      0.360    -12.012      0.000      -5.034      -3.622
+============================================================================================================
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/srv/conda/envs/notebook/lib/python3.10/site-packages/statsmodels/base/model.py:604: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  warnings.warn(&quot;Maximum Likelihood optimization failed to &quot;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Predicting the probability of adopted</span>
+<span class="n">y_prob</span> <span class="o">=</span> <span class="n">logreg</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">shelter_test</span><span class="p">)</span>
+
+<span class="c1"># Predicting the label: 0 or 1?</span>
+<span class="n">y_pred</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="mi">1</span> <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="o">/</span><span class="mi">2</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">y_prob</span><span class="p">],</span> <span class="n">index</span><span class="o">=</span><span class="n">y_prob</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">confusion_matrix</span>
+<span class="n">y_test</span> <span class="o">=</span> <span class="n">shelter_test</span><span class="p">[</span><span class="s1">&#39;Adopted&#39;</span><span class="p">]</span>
+<span class="n">cm</span> <span class="o">=</span> <span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Confusion Matrix : </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">cm</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Confusion Matrix : 
+ [[4820  460]
+ [ 809 1403]]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">TN</span><span class="p">,</span> <span class="n">FP</span><span class="p">,</span> <span class="n">FN</span><span class="p">,</span> <span class="n">TP</span> <span class="o">=</span> <span class="n">cm</span><span class="o">.</span><span class="n">ravel</span><span class="p">()</span>
+
+<span class="c1"># What is the Accuracy?</span>
+<span class="n">acc</span><span class="o">=</span> <span class="p">(</span><span class="n">TN</span> <span class="o">+</span> <span class="n">TP</span><span class="p">)</span> <span class="o">/</span> <span class="nb">sum</span><span class="p">(</span><span class="n">cm</span><span class="o">.</span><span class="n">ravel</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Accuracy is: </span><span class="si">%.4f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">acc</span>)
+
+
+<span class="c1"># What is the True Positive Rate ?</span>
+<span class="n">TPR_logit</span> <span class="o">=</span> <span class="n">TP</span><span class="o">/</span><span class="p">(</span><span class="n">TP</span><span class="o">+</span><span class="n">FN</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;TPR is: </span><span class="si">%.4f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">TPR_logit</span><span class="p">)</span>
+
+<span class="c1"># What is the False Positive rate ?</span>
+<span class="n">FPR_logit</span> <span class="o">=</span> <span class="n">FP</span><span class="o">/</span><span class="p">(</span><span class="n">FP</span><span class="o">+</span><span class="n">TN</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;FPR is: </span><span class="si">%.4f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">FPR_logit</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Accuracy is: 0.8306
+TPR is: 0.6343
+FPR is: 0.0871
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./Michelle"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Explore the Number of Animals in the Shelter by Type</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#eda-what-are-the-top-cat-breeds-in-the-shelter">EDA: What are the Top Cat Breeds in the Shelter?</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#eda-what-are-the-top-dog-breeds-in-the-shelter">EDA: What are the Top Dog Breeds in the Shelter?</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#trend-line-which-year-has-the-most-number-of-animal-intakes">Trend line: which year has the most number of animal intakes?</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#predict-whether-an-animal-is-adopted-eventually">Predict whether an Animal is adopted eventually</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Group 12
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
