@@ -1,7 +1,9 @@
 name: shelter
+
 channels:
   - conda-forge
   - defaults
+  
 dependencies:
   - python=3.10
   - ipykernel
@@ -11,4 +13,5 @@ dependencies:
   - scikit-learn
   - statsmodels
   - catboost
+  
 prefix: /home/jovyan/envs/shelter
