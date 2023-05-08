@@ -1,0 +1,1321 @@
+
+
+<!DOCTYPE html>
+
+
+<html >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Number of Days Before Adoption &#8212; Group 12 Final Project</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'adoption_days';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="None"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="README.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">Group 12 Final Project</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="README.html">
+                    Group 12 Final Project
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="main.html">Analysis of Animal Shelter Data in Sonoma County, CA</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/UCB-stat-159-s23/project-Group12/HEAD?urlpath=lab/tree/adoption_days.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onBinder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/UCB-stat-159-s23/project-Group12" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/UCB-stat-159-s23/project-Group12/issues/new?title=Issue%20on%20page%20%2Fadoption_days.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/adoption_days.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Number of Days Before Adoption</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="number-of-days-before-adoption">
+<h1>Number of Days Before Adoption<a class="headerlink" href="#number-of-days-before-adoption" title="Permalink to this headline">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip install catboost
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: catboost in /srv/conda/envs/notebook/lib/python3.10/site-packages (1.2)
+Requirement already satisfied: six in /srv/conda/envs/notebook/lib/python3.10/site-packages (from catboost) (1.16.0)
+Requirement already satisfied: plotly in /srv/conda/envs/notebook/lib/python3.10/site-packages (from catboost) (5.12.0)
+Requirement already satisfied: numpy&gt;=1.16.0 in /srv/conda/envs/notebook/lib/python3.10/site-packages (from catboost) (1.23.5)
+Requirement already satisfied: pandas&gt;=0.24 in /srv/conda/envs/notebook/lib/python3.10/site-packages (from catboost) (1.5.3)
+Requirement already satisfied: matplotlib in /srv/conda/envs/notebook/lib/python3.10/site-packages (from catboost) (3.6.3)
+Requirement already satisfied: scipy in /srv/conda/envs/notebook/lib/python3.10/site-packages (from catboost) (1.10.0)
+Requirement already satisfied: graphviz in /srv/conda/envs/notebook/lib/python3.10/site-packages (from catboost) (0.20.1)
+Requirement already satisfied: python-dateutil&gt;=2.8.1 in /srv/conda/envs/notebook/lib/python3.10/site-packages (from pandas&gt;=0.24-&gt;catboost) (2.8.2)
+Requirement already satisfied: pytz&gt;=2020.1 in /srv/conda/envs/notebook/lib/python3.10/site-packages (from pandas&gt;=0.24-&gt;catboost) (2021.3)
+Requirement already satisfied: kiwisolver&gt;=1.0.1 in /srv/conda/envs/notebook/lib/python3.10/site-packages (from matplotlib-&gt;catboost) (1.4.4)
+Requirement already satisfied: fonttools&gt;=4.22.0 in /srv/conda/envs/notebook/lib/python3.10/site-packages (from matplotlib-&gt;catboost) (4.39.3)
+Requirement already satisfied: pyparsing&gt;=2.2.1 in /srv/conda/envs/notebook/lib/python3.10/site-packages (from matplotlib-&gt;catboost) (3.0.6)
+Requirement already satisfied: cycler&gt;=0.10 in /srv/conda/envs/notebook/lib/python3.10/site-packages (from matplotlib-&gt;catboost) (0.11.0)
+Requirement already satisfied: contourpy&gt;=1.0.1 in /srv/conda/envs/notebook/lib/python3.10/site-packages (from matplotlib-&gt;catboost) (1.0.7)
+Requirement already satisfied: pillow&gt;=6.2.0 in /srv/conda/envs/notebook/lib/python3.10/site-packages (from matplotlib-&gt;catboost) (9.4.0)
+Requirement already satisfied: packaging&gt;=20.0 in /srv/conda/envs/notebook/lib/python3.10/site-packages (from matplotlib-&gt;catboost) (21.3)
+Requirement already satisfied: tenacity&gt;=6.2.0 in /srv/conda/envs/notebook/lib/python3.10/site-packages (from plotly-&gt;catboost) (8.2.2)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### loading in shelter data</span>
+<span class="n">shelter_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;./Animal_Shelter_Data.csv&#39;</span><span class="p">)</span>
+<span class="n">shelter_data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Breed</th>
+      <th>Color</th>
+      <th>Sex</th>
+      <th>Size</th>
+      <th>Date Of Birth</th>
+      <th>Impound Number</th>
+      <th>Kennel Number</th>
+      <th>Animal ID</th>
+      <th>...</th>
+      <th>Intake Subtype</th>
+      <th>Outcome Type</th>
+      <th>Outcome Subtype</th>
+      <th>Intake Condition</th>
+      <th>Outcome Condition</th>
+      <th>Intake Jurisdiction</th>
+      <th>Outcome Jurisdiction</th>
+      <th>Outcome Zip Code</th>
+      <th>Location</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>RAZOR</td>
+      <td>DOG</td>
+      <td>BOSTON TERRIER</td>
+      <td>BLACK/WHITE</td>
+      <td>Neutered</td>
+      <td>SMALL</td>
+      <td>10/29/2009</td>
+      <td>K22-043412</td>
+      <td>TRUCK</td>
+      <td>A396382</td>
+      <td>...</td>
+      <td>FIELD</td>
+      <td>RETURN TO OWNER</td>
+      <td>FLD_IDTAG</td>
+      <td>UNKNOWN</td>
+      <td>HEALTHY</td>
+      <td>SANTA ROSA</td>
+      <td>SANTA ROSA</td>
+      <td>95404.0</td>
+      <td>95404(38.43807, -122.71247)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>NaN</td>
+      <td>OTHER</td>
+      <td>PIGEON</td>
+      <td>GRAY/WHITE</td>
+      <td>Unknown</td>
+      <td>SMALL</td>
+      <td>NaN</td>
+      <td>K23-044095</td>
+      <td>TRUCK</td>
+      <td>A416206</td>
+      <td>...</td>
+      <td>FIELD</td>
+      <td>EUTHANIZE</td>
+      <td>INJ SEVERE</td>
+      <td>UNKNOWN</td>
+      <td>HEALTHY</td>
+      <td>SANTA ROSA</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>MAX</td>
+      <td>DOG</td>
+      <td>BORDER COLLIE</td>
+      <td>BLACK/TRICOLOR</td>
+      <td>Neutered</td>
+      <td>MED</td>
+      <td>03/10/2020</td>
+      <td>K23-044090</td>
+      <td>DS80</td>
+      <td>A399488</td>
+      <td>...</td>
+      <td>FIELD</td>
+      <td>RETURN TO OWNER</td>
+      <td>OVER THE COUNTER_CALL</td>
+      <td>UNKNOWN</td>
+      <td>PENDING</td>
+      <td>COUNTY</td>
+      <td>COUNTY</td>
+      <td>95472.0</td>
+      <td>95472(38.40179, -122.82512)</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+<p>3 rows × 24 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">shelter_data</span><span class="o">.</span><span class="n">columns</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Index([&#39;Name&#39;, &#39;Type&#39;, &#39;Breed&#39;, &#39;Color&#39;, &#39;Sex&#39;, &#39;Size&#39;, &#39;Date Of Birth&#39;,
+       &#39;Impound Number&#39;, &#39;Kennel Number&#39;, &#39;Animal ID&#39;, &#39;Intake Date&#39;,
+       &#39;Outcome Date&#39;, &#39;Days in Shelter&#39;, &#39;Intake Type&#39;, &#39;Intake Subtype&#39;,
+       &#39;Outcome Type&#39;, &#39;Outcome Subtype&#39;, &#39;Intake Condition&#39;,
+       &#39;Outcome Condition&#39;, &#39;Intake Jurisdiction&#39;, &#39;Outcome Jurisdiction&#39;,
+       &#39;Outcome Zip Code&#39;, &#39;Location&#39;, &#39;Count&#39;],
+      dtype=&#39;object&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### filtering on animals that are ultimately adopted</span>
+<span class="n">adopted_all</span> <span class="o">=</span> <span class="n">shelter_data</span><span class="p">[</span><span class="n">shelter_data</span><span class="p">[</span><span class="s1">&#39;Outcome Type&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;ADOPTION&#39;</span><span class="p">]</span>
+<span class="n">adopted_all</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Breed</th>
+      <th>Color</th>
+      <th>Sex</th>
+      <th>Size</th>
+      <th>Date Of Birth</th>
+      <th>Impound Number</th>
+      <th>Kennel Number</th>
+      <th>Animal ID</th>
+      <th>...</th>
+      <th>Intake Subtype</th>
+      <th>Outcome Type</th>
+      <th>Outcome Subtype</th>
+      <th>Intake Condition</th>
+      <th>Outcome Condition</th>
+      <th>Intake Jurisdiction</th>
+      <th>Outcome Jurisdiction</th>
+      <th>Outcome Zip Code</th>
+      <th>Location</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>10</th>
+      <td>*TABITHA</td>
+      <td>CAT</td>
+      <td>DOMESTIC SH</td>
+      <td>BLACK</td>
+      <td>Spayed</td>
+      <td>KITTN</td>
+      <td>07/14/2022</td>
+      <td>K22-042942</td>
+      <td>LOBBY</td>
+      <td>A413866</td>
+      <td>...</td>
+      <td>OVER THE COUNTER</td>
+      <td>ADOPTION</td>
+      <td>WALKIN</td>
+      <td>HEALTHY</td>
+      <td>HEALTHY</td>
+      <td>SANTA ROSA</td>
+      <td>COUNTY</td>
+      <td>95589.0</td>
+      <td>95589(40.06054, -123.96838)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>*PEPPER</td>
+      <td>CAT</td>
+      <td>DOMESTIC SH</td>
+      <td>BLACK/WHITE</td>
+      <td>Neutered</td>
+      <td>KITTN</td>
+      <td>08/29/2022</td>
+      <td>K22-042992</td>
+      <td>CA02</td>
+      <td>A413965</td>
+      <td>...</td>
+      <td>OVER THE COUNTER</td>
+      <td>ADOPTION</td>
+      <td>WALKIN</td>
+      <td>HEALTHY</td>
+      <td>HEALTHY</td>
+      <td>COUNTY</td>
+      <td>SANTA ROSA</td>
+      <td>95403.0</td>
+      <td>95403(38.51311, -122.75502)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>SIR DUNCAN NEPAL</td>
+      <td>DOG</td>
+      <td>NEWFOUNDLAND/MIX</td>
+      <td>BLACK/WHITE</td>
+      <td>Neutered</td>
+      <td>X-LRG</td>
+      <td>08/07/2017</td>
+      <td>K20-036379</td>
+      <td>DS82</td>
+      <td>A399409</td>
+      <td>...</td>
+      <td>OVER THE COUNTER</td>
+      <td>ADOPTION</td>
+      <td>REFERRAL-F</td>
+      <td>UNKNOWN</td>
+      <td>PENDING</td>
+      <td>SANTA ROSA</td>
+      <td>*PETALUMA</td>
+      <td>94954.0</td>
+      <td>94954(38.2581, -122.63753)</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+<p>3 rows × 24 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### keeping only relevant columns</span>
+<span class="n">adopted</span> <span class="o">=</span> <span class="n">adopted_all</span><span class="p">[[</span><span class="s1">&#39;Type&#39;</span><span class="p">,</span> <span class="s1">&#39;Breed&#39;</span><span class="p">,</span> <span class="s1">&#39;Color&#39;</span><span class="p">,</span> <span class="s1">&#39;Sex&#39;</span><span class="p">,</span> <span class="s1">&#39;Size&#39;</span><span class="p">,</span> <span class="s1">&#39;Date Of Birth&#39;</span><span class="p">,</span> <span class="s1">&#39;Intake Date&#39;</span><span class="p">,</span><span class="s1">&#39;Days in Shelter&#39;</span><span class="p">,</span> 
+                       <span class="s1">&#39;Intake Type&#39;</span><span class="p">,</span> <span class="s1">&#39;Intake Subtype&#39;</span><span class="p">,</span> <span class="s1">&#39;Intake Condition&#39;</span><span class="p">,</span> <span class="s1">&#39;Intake Jurisdiction&#39;</span><span class="p">]]</span>
+<span class="n">adopted</span> <span class="o">=</span> <span class="n">adopted</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">adopted</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Type</th>
+      <th>Breed</th>
+      <th>Color</th>
+      <th>Sex</th>
+      <th>Size</th>
+      <th>Date Of Birth</th>
+      <th>Intake Date</th>
+      <th>Days in Shelter</th>
+      <th>Intake Type</th>
+      <th>Intake Subtype</th>
+      <th>Intake Condition</th>
+      <th>Intake Jurisdiction</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>CAT</td>
+      <td>DOMESTIC SH</td>
+      <td>BLACK</td>
+      <td>Spayed</td>
+      <td>KITTN</td>
+      <td>07/14/2022</td>
+      <td>10/25/2022</td>
+      <td>63</td>
+      <td>STRAY</td>
+      <td>OVER THE COUNTER</td>
+      <td>HEALTHY</td>
+      <td>SANTA ROSA</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>CAT</td>
+      <td>DOMESTIC SH</td>
+      <td>BLACK/WHITE</td>
+      <td>Neutered</td>
+      <td>KITTN</td>
+      <td>08/29/2022</td>
+      <td>10/29/2022</td>
+      <td>59</td>
+      <td>STRAY</td>
+      <td>OVER THE COUNTER</td>
+      <td>HEALTHY</td>
+      <td>COUNTY</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>DOG</td>
+      <td>NEWFOUNDLAND/MIX</td>
+      <td>BLACK/WHITE</td>
+      <td>Neutered</td>
+      <td>X-LRG</td>
+      <td>08/07/2017</td>
+      <td>08/07/2020</td>
+      <td>20</td>
+      <td>OWNER SURRENDER</td>
+      <td>OVER THE COUNTER</td>
+      <td>UNKNOWN</td>
+      <td>SANTA ROSA</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### creating a feature for animal age at intake time</span>
+<span class="n">adopted</span> <span class="o">=</span> <span class="n">adopted</span><span class="p">[</span><span class="o">~</span><span class="n">adopted</span><span class="p">[</span><span class="s1">&#39;Date Of Birth&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()]</span>
+<span class="n">adopted</span> <span class="o">=</span> <span class="n">adopted</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">adopted</span><span class="p">[</span><span class="s1">&#39;age&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">adopted</span><span class="p">[</span><span class="s1">&#39;Intake Date&#39;</span><span class="p">],</span> <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;%m/</span><span class="si">%d</span><span class="s1">/%Y&#39;</span><span class="p">)</span> <span class="o">-</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">adopted</span><span class="p">[</span><span class="s1">&#39;Date Of Birth&#39;</span><span class="p">],</span> 
+                                                                                            <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;%m/</span><span class="si">%d</span><span class="s1">/%Y&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">days</span>
+<span class="n">adopted</span> <span class="o">=</span> <span class="n">adopted</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Intake Date&#39;</span><span class="p">,</span> <span class="s1">&#39;Date Of Birth&#39;</span><span class="p">])</span>
+<span class="n">adopted</span> <span class="o">=</span> <span class="n">adopted</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s1">&#39;nan&#39;</span><span class="p">)</span>
+<span class="n">adopted</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Type</th>
+      <th>Breed</th>
+      <th>Color</th>
+      <th>Sex</th>
+      <th>Size</th>
+      <th>Days in Shelter</th>
+      <th>Intake Type</th>
+      <th>Intake Subtype</th>
+      <th>Intake Condition</th>
+      <th>Intake Jurisdiction</th>
+      <th>age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>CAT</td>
+      <td>DOMESTIC SH</td>
+      <td>BLACK</td>
+      <td>Spayed</td>
+      <td>KITTN</td>
+      <td>63</td>
+      <td>STRAY</td>
+      <td>OVER THE COUNTER</td>
+      <td>HEALTHY</td>
+      <td>SANTA ROSA</td>
+      <td>103</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>CAT</td>
+      <td>DOMESTIC SH</td>
+      <td>BLACK/WHITE</td>
+      <td>Neutered</td>
+      <td>KITTN</td>
+      <td>59</td>
+      <td>STRAY</td>
+      <td>OVER THE COUNTER</td>
+      <td>HEALTHY</td>
+      <td>COUNTY</td>
+      <td>61</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>DOG</td>
+      <td>NEWFOUNDLAND/MIX</td>
+      <td>BLACK/WHITE</td>
+      <td>Neutered</td>
+      <td>X-LRG</td>
+      <td>20</td>
+      <td>OWNER SURRENDER</td>
+      <td>OVER THE COUNTER</td>
+      <td>UNKNOWN</td>
+      <td>SANTA ROSA</td>
+      <td>1096</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">test</span> <span class="o">=</span> <span class="n">adopted</span><span class="p">[</span><span class="n">adopted</span><span class="p">[</span><span class="s1">&#39;Days in Shelter&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">200</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">adopted</span><span class="p">[</span><span class="s1">&#39;log_days&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log1p</span><span class="p">(</span><span class="n">adopted</span><span class="p">[</span><span class="s1">&#39;Days in Shelter&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### test train split</span>
+
+<span class="kn">from</span> <span class="nn">catboost</span> <span class="kn">import</span> <span class="n">CatBoostRegressor</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">GridSearchCV</span>
+
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">adopted</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;Days in Shelter&#39;</span><span class="p">,</span> <span class="s1">&#39;log_days&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span> 
+                                                    <span class="n">adopted</span><span class="p">[</span><span class="s1">&#39;log_days&#39;</span><span class="p">],</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Creating and training a CatBoost regression model</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">CatBoostRegressor</span><span class="p">(</span><span class="n">cat_features</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">],</span> <span class="n">loss_function</span><span class="o">=</span><span class="s1">&#39;MAE&#39;</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+
+<span class="n">parameters</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;depth&#39;</span>         <span class="p">:</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span>
+              <span class="s1">&#39;learning_rate&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">],</span>
+              <span class="s1">&#39;iterations&#39;</span>    <span class="p">:</span> <span class="p">[</span><span class="mi">500</span><span class="p">,</span> <span class="mi">1000</span><span class="p">,</span> <span class="mi">1500</span><span class="p">]</span>
+                 <span class="p">}</span>
+
+<span class="n">grid</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">estimator</span><span class="o">=</span><span class="n">model</span><span class="p">,</span> <span class="n">param_grid</span> <span class="o">=</span> <span class="n">parameters</span><span class="p">,</span> <span class="n">cv</span> <span class="o">=</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">grid</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0:	learn: 0.6651078	total: 48.5ms	remaining: 24.2s
+499:	learn: 0.5173501	total: 783ms	remaining: 0us
+0:	learn: 0.6768126	total: 2.66ms	remaining: 1.32s
+499:	learn: 0.5336082	total: 734ms	remaining: 0us
+0:	learn: 0.6592251	total: 2.6ms	remaining: 1.29s
+499:	learn: 0.4779897	total: 745ms	remaining: 0us
+0:	learn: 0.6702145	total: 2.64ms	remaining: 1.32s
+499:	learn: 0.4889949	total: 782ms	remaining: 0us
+0:	learn: 0.6520357	total: 2.14ms	remaining: 1.07s
+499:	learn: 0.4589413	total: 745ms	remaining: 0us
+0:	learn: 0.6620974	total: 1.99ms	remaining: 995ms
+499:	learn: 0.4682575	total: 928ms	remaining: 0us
+0:	learn: 0.6651078	total: 2.04ms	remaining: 2.04s
+500:	learn: 0.5173043	total: 855ms	remaining: 851ms
+999:	learn: 0.4989638	total: 1.78s	remaining: 0us
+0:	learn: 0.6768126	total: 2.65ms	remaining: 2.64s
+500:	learn: 0.5334506	total: 807ms	remaining: 804ms
+999:	learn: 0.5126675	total: 1.58s	remaining: 0us
+0:	learn: 0.6592251	total: 2.53ms	remaining: 2.53s
+500:	learn: 0.4779809	total: 763ms	remaining: 759ms
+999:	learn: 0.4593189	total: 1.49s	remaining: 0us
+0:	learn: 0.6702145	total: 2.16ms	remaining: 2.16s
+500:	learn: 0.4889945	total: 760ms	remaining: 757ms
+999:	learn: 0.4695901	total: 1.47s	remaining: 0us
+0:	learn: 0.6520357	total: 3.31ms	remaining: 3.31s
+500:	learn: 0.4588993	total: 755ms	remaining: 752ms
+999:	learn: 0.4373672	total: 1.54s	remaining: 0us
+0:	learn: 0.6620974	total: 3.01ms	remaining: 3.01s
+500:	learn: 0.4681359	total: 1.5s	remaining: 1.49s
+999:	learn: 0.4465031	total: 3.48s	remaining: 0us
+0:	learn: 0.6651078	total: 2.45ms	remaining: 3.67s
+500:	learn: 0.5173043	total: 2.2s	remaining: 4.4s
+1000:	learn: 0.4989273	total: 4.46s	remaining: 2.22s
+1499:	learn: 0.4896570	total: 6.59s	remaining: 0us
+0:	learn: 0.6768126	total: 3.11ms	remaining: 4.66s
+500:	learn: 0.5334506	total: 2.08s	remaining: 4.14s
+1000:	learn: 0.5126285	total: 4.11s	remaining: 2.05s
+1499:	learn: 0.5010703	total: 6.22s	remaining: 0us
+0:	learn: 0.6592251	total: 3.34ms	remaining: 5s
+500:	learn: 0.4779809	total: 2.11s	remaining: 4.21s
+1000:	learn: 0.4593074	total: 4.13s	remaining: 2.06s
+1499:	learn: 0.4473612	total: 6.18s	remaining: 0us
+0:	learn: 0.6702145	total: 5.91ms	remaining: 8.85s
+500:	learn: 0.4889945	total: 2.01s	remaining: 4.01s
+1000:	learn: 0.4695771	total: 4.14s	remaining: 2.06s
+1499:	learn: 0.4563159	total: 6.1s	remaining: 0us
+0:	learn: 0.6520357	total: 3.2ms	remaining: 4.8s
+500:	learn: 0.4588993	total: 2.08s	remaining: 4.15s
+1000:	learn: 0.4373460	total: 4.1s	remaining: 2.04s
+1499:	learn: 0.4239838	total: 6.02s	remaining: 0us
+0:	learn: 0.6620974	total: 3.1ms	remaining: 4.65s
+500:	learn: 0.4681359	total: 1.96s	remaining: 3.9s
+1000:	learn: 0.4465010	total: 3.92s	remaining: 1.95s
+1499:	learn: 0.4331677	total: 5.89s	remaining: 0us
+0:	learn: 0.6647882	total: 5.17ms	remaining: 2.58s
+499:	learn: 0.4964524	total: 3.9s	remaining: 0us
+0:	learn: 0.6768051	total: 5.77ms	remaining: 2.88s
+499:	learn: 0.5113353	total: 3.87s	remaining: 0us
+0:	learn: 0.6576281	total: 4.86ms	remaining: 2.42s
+499:	learn: 0.4365784	total: 3.8s	remaining: 0us
+0:	learn: 0.6701777	total: 3.71ms	remaining: 1.85s
+499:	learn: 0.4455004	total: 3.88s	remaining: 0us
+0:	learn: 0.6489561	total: 4.24ms	remaining: 2.12s
+499:	learn: 0.4052756	total: 3.72s	remaining: 0us
+0:	learn: 0.6620539	total: 4.96ms	remaining: 2.48s
+499:	learn: 0.4124290	total: 3.78s	remaining: 0us
+0:	learn: 0.6647882	total: 4.96ms	remaining: 4.95s
+500:	learn: 0.4963935	total: 3.9s	remaining: 3.89s
+999:	learn: 0.4717413	total: 6.08s	remaining: 0us
+0:	learn: 0.6768051	total: 4.65ms	remaining: 4.65s
+500:	learn: 0.5112720	total: 1.57s	remaining: 1.56s
+999:	learn: 0.4836920	total: 3s	remaining: 0us
+0:	learn: 0.6576281	total: 3.91ms	remaining: 3.9s
+500:	learn: 0.4365659	total: 1.39s	remaining: 1.39s
+999:	learn: 0.4057831	total: 2.8s	remaining: 0us
+0:	learn: 0.6701777	total: 4.25ms	remaining: 4.25s
+500:	learn: 0.4453169	total: 1.38s	remaining: 1.37s
+999:	learn: 0.4101146	total: 2.77s	remaining: 0us
+0:	learn: 0.6489561	total: 4.19ms	remaining: 4.19s
+500:	learn: 0.4050943	total: 1.47s	remaining: 1.46s
+999:	learn: 0.3712460	total: 2.77s	remaining: 0us
+0:	learn: 0.6620539	total: 3.66ms	remaining: 3.66s
+500:	learn: 0.4121518	total: 1.5s	remaining: 1.49s
+999:	learn: 0.3754931	total: 2.82s	remaining: 0us
+0:	learn: 0.6647882	total: 4.25ms	remaining: 6.37s
+500:	learn: 0.4963935	total: 1.48s	remaining: 2.94s
+1000:	learn: 0.4717107	total: 2.8s	remaining: 1.4s
+1499:	learn: 0.4570970	total: 4.33s	remaining: 0us
+0:	learn: 0.6768051	total: 3.35ms	remaining: 5.03s
+500:	learn: 0.5112720	total: 1.44s	remaining: 2.87s
+1000:	learn: 0.4836125	total: 2.83s	remaining: 1.41s
+1499:	learn: 0.4668817	total: 4.3s	remaining: 0us
+0:	learn: 0.6576281	total: 4.64ms	remaining: 6.96s
+500:	learn: 0.4365659	total: 1.41s	remaining: 2.81s
+1000:	learn: 0.4057545	total: 2.76s	remaining: 1.38s
+1499:	learn: 0.3858730	total: 4.12s	remaining: 0us
+0:	learn: 0.6701777	total: 4.6ms	remaining: 6.89s
+500:	learn: 0.4453169	total: 1.53s	remaining: 3.05s
+1000:	learn: 0.4100968	total: 2.9s	remaining: 1.45s
+1499:	learn: 0.3889761	total: 4.29s	remaining: 0us
+0:	learn: 0.6489561	total: 4.25ms	remaining: 6.37s
+500:	learn: 0.4050943	total: 1.38s	remaining: 2.76s
+1000:	learn: 0.3710625	total: 2.75s	remaining: 1.37s
+1499:	learn: 0.3523073	total: 4.14s	remaining: 0us
+0:	learn: 0.6620539	total: 3.05ms	remaining: 4.57s
+500:	learn: 0.4121518	total: 1.5s	remaining: 2.98s
+1000:	learn: 0.3754393	total: 2.87s	remaining: 1.43s
+1499:	learn: 0.3526106	total: 4.24s	remaining: 0us
+0:	learn: 0.6643545	total: 8.13ms	remaining: 4.06s
+499:	learn: 0.4747161	total: 2.33s	remaining: 0us
+0:	learn: 0.6764314	total: 6.28ms	remaining: 3.13s
+499:	learn: 0.4862520	total: 2.35s	remaining: 0us
+0:	learn: 0.6554772	total: 6.25ms	remaining: 3.12s
+499:	learn: 0.3703158	total: 2.46s	remaining: 0us
+0:	learn: 0.6683273	total: 6.89ms	remaining: 3.44s
+499:	learn: 0.3857939	total: 2.34s	remaining: 0us
+0:	learn: 0.6448130	total: 6.33ms	remaining: 3.16s
+499:	learn: 0.3292306	total: 2.38s	remaining: 0us
+0:	learn: 0.6585103	total: 6.11ms	remaining: 3.05s
+499:	learn: 0.3311198	total: 2.41s	remaining: 0us
+0:	learn: 0.6643545	total: 5.63ms	remaining: 5.62s
+500:	learn: 0.4745602	total: 2.27s	remaining: 2.26s
+999:	learn: 0.4345838	total: 4.67s	remaining: 0us
+0:	learn: 0.6764314	total: 5.37ms	remaining: 5.37s
+500:	learn: 0.4861555	total: 2.46s	remaining: 2.45s
+999:	learn: 0.4450706	total: 4.86s	remaining: 0us
+0:	learn: 0.6554772	total: 5.45ms	remaining: 5.45s
+500:	learn: 0.3701117	total: 2.4s	remaining: 2.39s
+999:	learn: 0.3224362	total: 4.93s	remaining: 0us
+0:	learn: 0.6683273	total: 4.84ms	remaining: 4.83s
+500:	learn: 0.3856689	total: 2.42s	remaining: 2.41s
+999:	learn: 0.3369188	total: 4.76s	remaining: 0us
+0:	learn: 0.6448130	total: 5.54ms	remaining: 5.54s
+500:	learn: 0.3290932	total: 2.42s	remaining: 2.41s
+999:	learn: 0.2845619	total: 4.82s	remaining: 0us
+0:	learn: 0.6585103	total: 4.94ms	remaining: 4.94s
+500:	learn: 0.3310465	total: 2.37s	remaining: 2.36s
+999:	learn: 0.2879036	total: 4.78s	remaining: 0us
+0:	learn: 0.6643545	total: 5.38ms	remaining: 8.07s
+500:	learn: 0.4745602	total: 2.41s	remaining: 4.81s
+1000:	learn: 0.4344212	total: 5s	remaining: 2.49s
+1499:	learn: 0.4063780	total: 7.56s	remaining: 0us
+0:	learn: 0.6764314	total: 5.26ms	remaining: 7.89s
+500:	learn: 0.4861555	total: 2.37s	remaining: 4.73s
+1000:	learn: 0.4449922	total: 5.52s	remaining: 2.75s
+1499:	learn: 0.4150800	total: 8.05s	remaining: 0us
+0:	learn: 0.6554772	total: 5.94ms	remaining: 8.9s
+500:	learn: 0.3701117	total: 2.74s	remaining: 5.47s
+1000:	learn: 0.3223701	total: 5.29s	remaining: 2.63s
+1499:	learn: 0.2961532	total: 7.77s	remaining: 0us
+0:	learn: 0.6683273	total: 5.03ms	remaining: 7.54s
+500:	learn: 0.3856689	total: 2.49s	remaining: 4.97s
+1000:	learn: 0.3368592	total: 5.11s	remaining: 2.54s
+1499:	learn: 0.3053970	total: 7.47s	remaining: 0us
+0:	learn: 0.6448130	total: 5.33ms	remaining: 7.99s
+500:	learn: 0.3290932	total: 2.48s	remaining: 4.95s
+1000:	learn: 0.2843610	total: 4.86s	remaining: 2.42s
+1499:	learn: 0.2571287	total: 7.25s	remaining: 0us
+0:	learn: 0.6585103	total: 6.08ms	remaining: 9.11s
+500:	learn: 0.3310465	total: 2.46s	remaining: 4.91s
+1000:	learn: 0.2878397	total: 4.91s	remaining: 2.45s
+1499:	learn: 0.2597452	total: 7.35s	remaining: 0us
+0:	learn: 0.6641817	total: 14.6ms	remaining: 7.3s
+499:	learn: 0.4388690	total: 7.13s	remaining: 0us
+0:	learn: 0.6761559	total: 13.4ms	remaining: 6.68s
+499:	learn: 0.4555563	total: 6.66s	remaining: 0us
+0:	learn: 0.6546348	total: 14.9ms	remaining: 7.42s
+499:	learn: 0.2860552	total: 7.69s	remaining: 0us
+0:	learn: 0.6669319	total: 13.5ms	remaining: 6.71s
+499:	learn: 0.2988129	total: 7.4s	remaining: 0us
+0:	learn: 0.6432161	total: 14.5ms	remaining: 7.24s
+499:	learn: 0.2361640	total: 7.67s	remaining: 0us
+0:	learn: 0.6557630	total: 15.2ms	remaining: 7.57s
+499:	learn: 0.2330610	total: 8.02s	remaining: 0us
+0:	learn: 0.6641817	total: 18ms	remaining: 18s
+500:	learn: 0.4386392	total: 7.62s	remaining: 7.58s
+999:	learn: 0.3767870	total: 15.6s	remaining: 0us
+0:	learn: 0.6761559	total: 12.8ms	remaining: 12.8s
+500:	learn: 0.4553763	total: 6.9s	remaining: 6.88s
+999:	learn: 0.3904060	total: 14.7s	remaining: 0us
+0:	learn: 0.6546348	total: 17.4ms	remaining: 17.4s
+500:	learn: 0.2858677	total: 7.87s	remaining: 7.84s
+999:	learn: 0.2292834	total: 16s	remaining: 0us
+0:	learn: 0.6669319	total: 13.7ms	remaining: 13.7s
+500:	learn: 0.2986727	total: 8.32s	remaining: 8.29s
+999:	learn: 0.2293362	total: 16.6s	remaining: 0us
+0:	learn: 0.6432161	total: 14.8ms	remaining: 14.8s
+500:	learn: 0.2361510	total: 8.03s	remaining: 8s
+999:	learn: 0.1924491	total: 16.5s	remaining: 0us
+0:	learn: 0.6557630	total: 12.7ms	remaining: 12.7s
+500:	learn: 0.2327254	total: 8.04s	remaining: 8.01s
+999:	learn: 0.1781883	total: 16.1s	remaining: 0us
+0:	learn: 0.6641817	total: 15.1ms	remaining: 22.7s
+500:	learn: 0.4386392	total: 7.33s	remaining: 14.6s
+1000:	learn: 0.3766700	total: 15.5s	remaining: 7.71s
+1499:	learn: 0.3331432	total: 24.2s	remaining: 0us
+0:	learn: 0.6761559	total: 15.6ms	remaining: 23.4s
+500:	learn: 0.4553763	total: 7.57s	remaining: 15.1s
+1000:	learn: 0.3902786	total: 15.7s	remaining: 7.85s
+1499:	learn: 0.3432687	total: 24.1s	remaining: 0us
+0:	learn: 0.6546348	total: 13.6ms	remaining: 20.4s
+500:	learn: 0.2858677	total: 7.46s	remaining: 14.9s
+1000:	learn: 0.2291879	total: 15.1s	remaining: 7.55s
+1499:	learn: 0.1963675	total: 22.9s	remaining: 0us
+0:	learn: 0.6669319	total: 15.2ms	remaining: 22.7s
+500:	learn: 0.2986727	total: 7.42s	remaining: 14.8s
+1000:	learn: 0.2292037	total: 15.1s	remaining: 7.53s
+1499:	learn: 0.1945580	total: 22.8s	remaining: 0us
+0:	learn: 0.6432161	total: 13.8ms	remaining: 20.7s
+500:	learn: 0.2361510	total: 7.32s	remaining: 14.6s
+1000:	learn: 0.1923380	total: 15s	remaining: 7.46s
+1499:	learn: 0.1654402	total: 22.7s	remaining: 0us
+0:	learn: 0.6557630	total: 17.9ms	remaining: 26.8s
+500:	learn: 0.2327254	total: 7.49s	remaining: 14.9s
+1000:	learn: 0.1781742	total: 15.2s	remaining: 7.58s
+1499:	learn: 0.1508716	total: 22.7s	remaining: 0us
+0:	learn: 0.6703527	total: 15.1ms	remaining: 22.6s
+500:	learn: 0.4656718	total: 8.58s	remaining: 17.1s
+1000:	learn: 0.4207145	total: 17.7s	remaining: 8.82s
+1499:	learn: 0.3857663	total: 27.4s	remaining: 0us
+</pre></div>
+</div>
+<div class="output text_html"><style>#sk-container-id-1 {color: black;background-color: white;}#sk-container-id-1 pre{padding: 0;}#sk-container-id-1 div.sk-toggleable {background-color: white;}#sk-container-id-1 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-1 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-1 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-1 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-1 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-1 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-1 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-1 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-1 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-1 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-1 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-1 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-1 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-1 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-1 div.sk-item {position: relative;z-index: 1;}#sk-container-id-1 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-1 div.sk-item::before, #sk-container-id-1 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-1 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-1 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-1 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-1 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-1 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-1 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-1 div.sk-label-container {text-align: center;}#sk-container-id-1 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-1 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-1" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>GridSearchCV(cv=2,
+             estimator=&lt;catboost.core.CatBoostRegressor object at 0x7f43998ac5b0&gt;,
+             param_grid={&#x27;depth&#x27;: [3, 5, 7, 9], &#x27;iterations&#x27;: [500, 1000, 1500],
+                         &#x27;learning_rate&#x27;: [0.01, 0.05, 0.1]})</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-1" type="checkbox" ><label for="sk-estimator-id-1" class="sk-toggleable__label sk-toggleable__label-arrow">GridSearchCV</label><div class="sk-toggleable__content"><pre>GridSearchCV(cv=2,
+             estimator=&lt;catboost.core.CatBoostRegressor object at 0x7f43998ac5b0&gt;,
+             param_grid={&#x27;depth&#x27;: [3, 5, 7, 9], &#x27;iterations&#x27;: [500, 1000, 1500],
+                         &#x27;learning_rate&#x27;: [0.01, 0.05, 0.1]})</pre></div></div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-2" type="checkbox" ><label for="sk-estimator-id-2" class="sk-toggleable__label sk-toggleable__label-arrow">estimator: CatBoostRegressor</label><div class="sk-toggleable__content"><pre>&lt;catboost.core.CatBoostRegressor object at 0x7f43998ac5b0&gt;</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-3" type="checkbox" ><label for="sk-estimator-id-3" class="sk-toggleable__label sk-toggleable__label-arrow">CatBoostRegressor</label><div class="sk-toggleable__content"><pre>&lt;catboost.core.CatBoostRegressor object at 0x7f43998ac5b0&gt;</pre></div></div></div></div></div></div></div></div></div></div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">grid</span><span class="o">.</span><span class="n">best_params_</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;depth&#39;: 9, &#39;iterations&#39;: 1500, &#39;learning_rate&#39;: 0.01}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">CatBoostRegressor</span><span class="p">(</span><span class="n">cat_features</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">],</span> <span class="n">loss_function</span><span class="o">=</span><span class="s1">&#39;MAE&#39;</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span>
+                         <span class="n">depth</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span> <span class="n">iterations</span><span class="o">=</span><span class="mi">1500</span><span class="p">,</span> <span class="n">learning_rate</span><span class="o">=</span><span class="mf">0.05</span><span class="p">)</span>
+<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="n">predictions</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0:	learn: 0.6703527	total: 18.8ms	remaining: 28.3s
+500:	learn: 0.4656718	total: 8.1s	remaining: 16.1s
+1000:	learn: 0.4207145	total: 16.6s	remaining: 8.27s
+1499:	learn: 0.3857663	total: 26.1s	remaining: 0us
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">x</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">predictions</span><span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/6cf2de42558a78aed6fb68ae0f9774d842c5a7a1a944d9c248a92ac1bfca3c48.png" src="_images/6cf2de42558a78aed6fb68ae0f9774d842c5a7a1a944d9c248a92ac1bfca3c48.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">feature_importance</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">get_feature_importance</span><span class="p">()</span>
+
+<span class="c1"># Create a dictionary to store the feature importance scores with their corresponding feature names</span>
+<span class="n">feature_importance_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">X_train</span><span class="o">.</span><span class="n">columns</span><span class="p">,</span> <span class="n">feature_importance</span><span class="p">))</span>
+
+<span class="c1"># Sort the features by their importance scores in descending order and get the top N features</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">10</span>  <span class="c1"># number of top features to select</span>
+<span class="n">top_features</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">feature_importance_dict</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">feature_importance_dict</span><span class="o">.</span><span class="n">get</span><span class="p">,</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)[:</span><span class="n">n</span><span class="p">]</span>
+
+<span class="c1"># Print the top N features</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Top </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s2"> Features:&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">top_features</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">feature</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">feature_importance_dict</span><span class="p">[</span><span class="n">feature</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Top 10 Features:
+age: 17.37831980781531
+Color: 13.384210745426294
+Size: 10.54400616631359
+Intake Condition: 10.404406589511911
+Breed: 9.5344276492955
+Intake Type: 9.36074959502394
+Intake Subtype: 8.947070989951765
+Intake Jurisdiction: 7.1475461122126
+Sex: 6.766996833848723
+Type: 6.532265510600237
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Group 12
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
