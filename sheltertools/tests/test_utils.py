@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sheltertools.utils import *
 import pytest
+import os
 
 
 
@@ -30,4 +31,14 @@ def test_plot_title():
 	actual_title = plt.gca().get_title()
 	assert actual_title == expected_title, f"Unexpected title. Expected: {expected_title}, Actual: {actual_title}"
 	
-#def test_
+# Test 3
+@pytest.mark.filterwarnings("ignore::UserWarning")
+def test_save_figures():
+	"""
+	Check whether a plot is saved successfully to `figures`:
+	If the file size is greater than 0, the plot png is saved successfully.
+	"""
+	plot_trend_line(shelter_data)
+	file_path = 'figures/'+'Trend_Line_of_Animal_Intakes_by_Year.png'
+	file_size = os.path.getsize(file_path)
+	assert file_size > 0

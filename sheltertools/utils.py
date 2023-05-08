@@ -33,9 +33,9 @@ def plot_trend_line(shelter_data):
     # Filter the data to only include records from the year 2014 and later.
     shelter_data = shelter_data[shelter_data['Intake Year'] != '2013']
     intake_counts = shelter_data.groupby('Intake Year').size()
-    intake_counts.plot(kind='line', title='Animal Intakes by Year')
     plt.figure(figsize=(10,6))
     plt.scatter(x=intake_counts.index, y=intake_counts)
+    plt.plot(intake_counts.index, intake_counts)
     plt.xticks(np.arange(len(intake_counts)), intake_counts.index)
     plt.xlabel('Intake Year', size=15)
     plt.ylabel('Count', size=15)
@@ -50,8 +50,9 @@ def trend_proportion(Outcome, yearly_rate):
     """
     outcome_type = yearly_rate[yearly_rate["Outcome Type"]==Outcome]
     ax = outcome_type.plot(x="year",y="percent")
-    ax.set_ylabel("% out of total intakes")
-    ax.set_title("Proportion of "+Outcome+" by year")
+    ax.set_xlabel("Year", size=15)
+    ax.set_ylabel("% out of total intakes", size=15)
+    ax.set_title("Proportion of "+Outcome+" by year", size=15)
     fig = ax.get_figure()
     fig.set_size_inches(8, 6) 
     fig.savefig('figures/' + 'Proportion_of_'+ Outcome + '_by_Year', bbox_inches='tight')
