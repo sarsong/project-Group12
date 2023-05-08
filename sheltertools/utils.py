@@ -2,6 +2,14 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
+
+def number_of_animals_by_type(shelter_data):
+    """
+    Show the number of animals in the Shelter by Intake type
+    """
+    return shelter_data.groupby('Intake Type')['Type'].value_counts()
+
+
 def plot_top_breeds(animal_type, shelter_data):
     """
     plot the top breeds for a given type of animal: DOG, CAT, or OTHER
