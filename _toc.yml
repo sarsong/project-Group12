@@ -2,7 +2,9 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: README
-chapters:
-- file: main
-- file: modeling
+root: main
+parts: 
+- caption: Analysis Notebooks
+    chapters:
+    - file: EDA
+    - file: modeling
