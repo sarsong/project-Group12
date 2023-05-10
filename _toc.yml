@@ -4,9 +4,10 @@
 format: jb-book
 root: README
 parts:
+  - chapters:
+    - file: main
+  - caption: Analysis Notebooks
     chapters:
-      - file: main
-- caption: Analysis Notebooks
-    chapters:
-      - file: EDA
-      - file: modeling
+    - file: EDA
+    - file: modeling
+
