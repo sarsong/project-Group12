@@ -22,6 +22,8 @@ html :
 
 .PHONY : all
 all :
+	jupyterbook execute EDA.ipynb 
+	jupyterbook execute modeling.ipynb
 	jupyterbook execute main.ipynb
 
 

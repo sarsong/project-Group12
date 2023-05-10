@@ -13,5 +13,7 @@ dependencies:
   - scikit-learn
   - statsmodels
   - catboost
+  - os
+  - pytest
   
 prefix: /home/jovyan/envs/shelter
